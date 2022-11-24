@@ -1,143 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
     <title>Denis Novik</title>
 </head>
+
 <body>
-    <header>
-        <nav class="header">
-            <ul class="header__menu">
-                <li>
-                    <a class="header__menuItem" href="">Home</a>
-                </li>
-                <li>
-                    <a class="header__menuItem" href="">About me</a>
-                </li>
-                <li>
-                    <a class="header__menuItem" href="">Skills</a>
-                </li>
-                <li>
-                    <a class="header__menuItem" href="">Portfolio</a>
-                </li>
-                <li>
-                    <a class="header__menuItem" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-
-        <h1>Denis Novik</h1>
-        <img src="./img/Novik.jpg" alt="Novik">
-    </header>
-
-    <main>
-        <section class="description">
-            <h2 class="description__title">About me</h2>
-            <p class="description__subTitle">
-                Hi, I'm Denis – UX/UI designer from Minsk.
-                I'm interested in design and everything connected with it.
-            </p>
-            <p class="description__subTitle">
-                I'm studying at courses "Web and mobile design 
-                interfaces" in IT-Academy.
-            </p>
-            <p class="description__subTitle">
-                Ready to implement excellent projects with wonderful people.
-            </p>
-        </section>
-
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="#">Home</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="#">About me</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="#">Skills</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="#">Portfolio</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
     
-        <section class="cards">
-            <div class="top">
-                <h2 class="top__title">Skills</h2>
-                <p class="top__subtitle">I have skills in such technologies as</p>
-            </div>
-            <div class="cards__wrapper">
-                <div class="skillCard">
-                    <img class="skillCard__icon skillCard__icon_ps" src="./img/Ps.png" alt="Ps">
-                    <p class="skillCard__subtitle">Adobe Photoshop</p>
-                    <div class="skillCard__stars">
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star skillCard__star_disabled"></div>
-                    </div>
+            <h1 class="header__title">Denis Novik</h1>
+            <img class="header__img" src="./img/Novik.jpg" alt="Novik">
+        </header>
+    
+        <main>
+            <section class="description">
+                <h2 class="description__title title">About me</h2>
+                <p class="description__subTitle subTitle">
+                    Hi, I'm Denis – UX/UI designer from Minsk.
+                    <br>
+                    I'm interested in design and everything connected with it.
+                </p>
+                <p class="description__subTitle subTitle">
+                    I'm studying at courses "Web and mobile design
+                    <br>
+                    interfaces" in IT-Academy.
+                </p>
+                <p class="description__subTitle description__subTitle_largePad subTitle">
+                    Ready to implement excellent projects
+                    <br>
+                    with wonderful people.
+                </p>
+            </section>
+    
+    
+            <section class="cards">
+                <div class="cards__top">
+                    <h2 class="cards__topTitle title">Skills</h2>
+                    <p class="cards__topSubtitle subTitle">I have skills in such technologies as</p>
                 </div>
-                <div class="skillCard">
-                    <img class="skillCard__icon skillCard__icon_ai" src="./img/Ai.png" alt="Ai">
-                    <p class="skillCard__subtitle">Adobe Illustrator</p>
-                    <div class="skillCard__stars">
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star skillCard__star_disabled"></div>
+                <div class="cards__wrapper">
+                    <div class="skillCard">
+                        <img class="skillCard__icon skillCard__icon_ps" src="./img/Ps.png" alt="Ps">
+                        <p class="skillCard__subtitle">Adobe <br> Photoshop</p>
+                        <div class="skillCard__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star transparent"></i>
+                            <i class="fas fa-star transparent"></i>
+                            <i class="fas fa-star transparent"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="skillCard">
-                    <img class="skillCard__icon skillCard__icon_ae" src="./img/Ae.png" alt="Ae">
-                    <p class="skillCard__subtitle">Adobe After Effects </p>
-                    <div class="skillCard__stars">
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star skillCard__star_disabled"></div>
+                    <div class="skillCard">
+                        <img class="skillCard__icon skillCard__icon_ai" src="./img/Ai.png" alt="Ai">
+                        <p class="skillCard__subtitle">Adobe <br> Illustrator</p>
+                        <div class="skillCard__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star transparent"></i>
+                            <i class="fas fa-star transparent"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="skillCard">
-                    <img class="skillCard__icon skillCard__icon_figma" src="./img/Figma.png" alt="Figma">
-                    <p class="skillCard__subtitle">Figma</p>
-                    <div class="skillCard__stars">
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star"></div>
-                        <div class="skillCard__star skillCard__star_disabled"></div>
+                    <div class="skillCard">
+                        <img class="skillCard__icon skillCard__icon_ae" src="./img/Ae.png" alt="Ae">
+                        <p class="skillCard__subtitle">Adobe <br> After Effects </p>
+                        <div class="skillCard__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star transparent"></i>
+                        </div>
                     </div>
+                    <div class="skillCard">
+                        <img class="skillCard__icon skillCard__icon_figma" src="./img/Figma.png" alt="Figma">
+                        <p class="skillCard__subtitle">Figma</p>
+                        <div class="skillCard__stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+    
                 </div>
-
-            </div>
-        </section>
-
-        <section class="portfolio">
-            <h2 class="portfolio__title">Portfolio</h2>
-
-            <img src="./img/Fashion-Store.jpg" alt="Fashion-Store">
-            <p class="portfolio__subTitle">Online fashion store - Homepage</p>
-
-            <img src="./img/reebok_web.png" alt="reebok_web">
-            <p class="portfolio__subTitle">Reebok Store - Concept</p>
-
-            <img src="./img/braun-landing.jpg" alt="Braun Landing Page - Concept">
-            <p class="portfolio__subTitle">Braun Landing Page - Concept</p>
-
-        </section>
-
-
+            </section>
+    
+            <section class="portfolio">
+                <h2 class="portfolio__title title">Portfolio</h2>
+    
+                <img src="./img/Fashion-Store.jpg" alt="Fashion-Store">
+                <p class="portfolio__subTitle subTitle">Online fashion store - Homepage</p>
+    
+                <img src="./img/reebok_web.png" alt="reebok_web">
+                <p class="portfolio__subTitle subTitle">Reebok Store - Concept</p>
+    
+                <img src="./img/braun-landing.jpg" alt="Braun Landing Page - Concept">
+                <p class="portfolio__subTitle portfolio__subTitle_largePad subTitle">Braun Landing Page - Concept</p>
+    
+            </section>
+        </main>
+    
         <footer class="footer">
-            <div class="top">
-                <h2 class="top__title">Contacts</h2>
-                <p class="top__subtitle ">Want to know more or just chat? You are welcome!</p>
+            <div class="footer__top">
+                <h2 class="footer__topTitle title">Contacts</h2>
+                <p class="footer__topSubtitle subTitle">Want to know more or just chat? <br> You are welcome!</p>
             </div>
             <div class="buttonContainer">
-                <a href="#" class="button">Send message</a>
+                <button href="#" class="button">Send message</button>
             </div>
-            <div class="icons">
-                <img href="./img/linkedin.png"  class="icons__item icons__item_linkedin"></img>
-                <img href="./img/instagram.png" class="icons__item icons__item_inst"></img>
-                <img href="./img/behance.png"  class="icons__item icons__item_behance"></img>
-                <img href="./img/dribbble.png"  class="icons__item icons__item_dribbble"></img>
+            <div class="footer__icons">
+                <img href="./img/linkedin.png" class="footer__iconsItem footer__iconsItem_linkedin"></img>
+                <img href="./img/instagram.png" class="footer__iconsItem footer__iconsItem_inst"></img>
+                <img href="./img/behance.png" class="footer__iconsItem footer__iconsItem_behance"></img>
+                <img href="./img/dribbble.png" class="footer__iconsItem footer__iconsItem_dribbble"></img>
             </div>
-            <div class="footer__subtitle">Like me on LinkedIn, Instagram, Behance, Dribble</div>
+            <div class="footer__subtitle">Like me on <br> LinkedIn, <br> Instagram, Behance, Dribble</div>
         </footer>
-    </main>
-        
+    </div>
+    
+
 </body>
+
 </html>

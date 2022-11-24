@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(/fonts/OpenSans-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "OpenSans-Regular";
+  font-size: 18px;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "OpenSans-Bold";
+  font-size: 34px;
+  line-height: 46px;
+}
+
+.subTitle {
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #828282;
+}
+.header__menuItem {
+  list-style: none;
+  line-height: 24.51px;
+  padding: 27.5px 40px;
+}
+.header__menuLink {
+  text-decoration: none;
+  color: #828282;
+}
+.header__menuLink :checked {
+  color: black;
+}
+.header__title {
+  font-size: 48px;
+  line-height: 65px;
+  font-family: "OpenSans-Bold";
+  text-align: left;
+  padding: 12px 0 50px;
+}
+.description {
+  text-align: center;
+}
+.description__title {
+  padding: 100px 0 50px;
+}
+.description__subTitle {
+  padding-bottom: 30px;
+}
+.description__subTitle_largePad {
+  padding-bottom: 100px;
+}
+
+.cards__top {
+  text-align: center;
+}
+.cards__topTitle {
+  padding: 100px 0 20px;
+}
+.cards__topSubtitle {
+  padding-bottom: 50px;
+}
+.cards__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.skillCard__subtitle {
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "OpenSans-Bold";
+  color: #828282;
+  padding: 25px 0 60px;
+  text-align: center;
+}
+.transparent:hover {
+  transition: all 1s ease-in-out;
+  opacity: 0.3;
+}
+
+.portfolio {
+  text-align: center;
+}
+.portfolio__title {
+  padding: 100px 0 50px;
+}
+.portfolio__subTitle {
+  text-decoration: underline;
+  padding: 40px 0 70px;
+}
+.portfolio__subTitle_largePad {
+  padding-bottom: 100px;
+}
+
+.footer {
+  padding: 100px 0;
+  text-align: center;
+}
+.footer__topSubtitle {
+  padding: 20px 0 60px;
+}
+.footer__subtitle {
+  font-size: 14px;
+  line-height: 19px;
+  color: #828282;
+  padding-top: 60px;
+}
+
+.button {
+  font-family: "OpenSans-Bold";
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  padding: 10px 16px;
+  background-color: black;
+  border-radius: 22px;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
