@@ -62,7 +62,7 @@ body{
         line-height: 65px;
         font-family: "OpenSans-Bold";
         text-align: left;
-        padding: 12px 0 50px;
+        margin: 12px 0 50px;
 
     }
 
@@ -74,17 +74,20 @@ body{
 
 .description {
     text-align: center;
+    margin: 100px 245px;
 
     &__title {
-        padding: 100px 0 50px;
+        margin-bottom:50px;
     }
 
     &__subTitle {
-        padding-bottom: 30px;
-
-        &_largePad{
-            padding-bottom: 100px;
+        & + &{
+            margin-top: 30px;
         }
+
+        // &_largePad{
+        //     padding-bottom: 100px;
+        // }
     }
 }
 
@@ -98,11 +101,11 @@ body{
     }
 
     &__topTitle {
-        padding: 100px 0 20px;
+        margin: 100px 0 20px;
     }
 
     &__topSubtitle {
-        padding-bottom: 50px;
+        margin-bottom: 50px;
     }
 
     &__wrapper {
@@ -136,7 +139,7 @@ body{
         line-height: 19px;
         font-family: "OpenSans-Bold";
         color: #828282;
-        padding: 25px 0 60px;
+        margin: 25px 0 60px;
         text-align: center;
     }
 
@@ -158,14 +161,14 @@ body{
     text-align: center;
 
     &__title {
-        padding: 100px 0 50px;
+        margin: 100px 0 50px;
     }
 
     &__subTitle {
         text-decoration: underline;
-        padding: 40px 0 70px;
+        margin: 40px 0 70px;
         &_largePad{
-            padding-bottom: 100px;
+            margin-bottom: 100px;
         }
     }
 }
@@ -176,7 +179,7 @@ body{
 
 
 .footer {
-    padding: 100px 0;
+    margin: 100px 0;
     text-align: center;
 
     &__top {
@@ -186,13 +189,15 @@ body{
     }
 
     &__topSubtitle {
-        padding: 20px 0 60px;
+        margin: 20px 0 60px;
     }
 
     &__icons {
     }
 
     &__iconsItem {
+        width: 30px;
+        aspect-ratio: 1 / 1;
 
         &_linkedin {
         }
@@ -211,12 +216,13 @@ body{
         font-size: 14px;
         line-height: 19px;
         color:#828282;
-        padding-top: 60px;
+        margin-top: 60px;
 
     }
 }
 
 .buttonContainer {
+    margin-bottom: 40px;
 }
 .button {
     font-family: "OpenSans-Bold";
